@@ -1,13 +1,61 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  let sum = 0;
+  for (i in array) {
+    for (j in array) {
+      sum = sum + array[i] + array[j];
+    }
+  }
+  if (sum === target) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
-/* 
+function hasTargetSum(array, target) {
+ let sum = 0;
+ let index = 0;
+ while (sum !== target) {
+  for (let i = 1; i < array.length; i++) {
+    if (sum = sum + array[index] + array[i];
+  }
+ }
+}
+
+function hasTargetSum(array, target) {
+  let sum = 0;
+  let index = 0;
+  if (sum !== target) {
+    for (let i = 1; i < array.length; i++) {
+
+    }
+  }
+
+  }
+
+function hasTargetSum(array, target) {
+  let index = 0;
+  for (let i = 1; i < array.length) {
+    if (array[index] + array[i] !=== target) {
+      i++;
+    }
+    if (array[index + i] + array[i])
+  }
+}
+
+
+/*
   Write the Big O time complexity of your function here
 */
 
-/* 
+/*
   Add your pseudocode here
+  initialize a for loop, that runs through each item in the array
+  initialize a second for loop, that runs through each item in the array
+  while loop that keeps running until the numbers add up
+  if statement the sum equals the target
+  return true, else return false
 */
 
 /*
